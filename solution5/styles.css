@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Outfit:wght@700&family=Young+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Montserrat:wght@500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.parent {
+    max-width: 600px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+
+.div1 {
+    grid-area: 1 / 1 / 2 / 2;
+}
+
+.div2 {
+    grid-area: 1 / 2 / 2 / 3;
+}
+
+body {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-color: #F2EAE2;
+}
+
+@media (min-width: 767.98px) {
+    img {
+        -webkit-border-top-left-radius: 10px;
+        -webkit-border-bottom-left-radius: 10px;
+        -moz-border-radius-topleft: 10px;
+        -moz-border-radius-bottomleft: 10px;
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+    }
+    .div2{
+        -webkit-border-top-right-radius: 10px;
+        -webkit-border-bottom-right-radius: 10px;
+        -moz-border-radius-topright: 10px;
+        -moz-border-radius-bottomright: 10px;
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
+}
+
+.div2 {
+    background-color: #FFFFFF;
+    max-width: 300px;
+    max-height: 450px;
+}
+
+.Type {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 12px;
+    line-height: auto;
+    letter-spacing: 5px;
+    color: #6C7289;
+    margin-bottom: 25px;
+}
+
+.wrapper {
+    padding: 32px;
+}
+
+.Name {
+    color: #1C232B;
+    font-family: "Fraunces", serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 32px;
+    letter-spacing: 0px;
+    line-height: 32px;
+    margin-bottom: 25px;
+}
+
+.subText {
+    color: #6C7289;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.5;
+
+    margin-bottom: 25px;
+}
+
+.oldPrice,
+.currentPrice {
+    display: inline-block;
+}
+
+.Prices {
+
+    margin-bottom: 25px;
+}
+
+.currentPrice {
+    padding-right: 19px;
+    color: #3D8168;
+    font-family: "Fraunces", serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 32px;
+    line-height: 1.37;
+}
+
+.buttonPrimary{
+    width: 100%;
+}
+
+.buttonPrimary:hover{
+    background-color: #1A4032;
+    cursor: pointer;
+}
+
+.oldPrice {
+    color: #6C7289;
+    text-decoration: line-through;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 13px;
+    vertical-align: center;
+}
+
+.buttonPrimary {
+    background-color: #3D8168;
+    border: none;
+    padding: 15px 62px;
+    border-radius: 8px;
+    color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.imgMobile {
+    display: none;
+}
+
+.addToCart {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 14px;
+}
+
+@media (max-width: 767.98px) {
+    .parent {
+        display: block;
+    }
+
+    .imgMobile {
+        display: block;
+    }
+
+    .imgDesktop {
+        display: none;
+    }
+
+    body {
+        height: auto;
+    }
+
+    img {
+        -webkit-border-top-left-radius: 10px;
+        -webkit-border-top-right-radius: 10px;
+        -moz-border-radius-topleft: 10px;
+        -moz-border-radius-topright: 10px;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+    }
+    .parent{
+        margin: 28px 16px;
+    }
+    .wrapper, .div2{
+        max-width: 343px;
+    }
+    .div2{
+        -webkit-border-bottom-right-radius: 10px;
+-webkit-border-bottom-left-radius: 10px;
+-moz-border-radius-bottomright: 10px;
+-moz-border-radius-bottomleft: 10px;
+border-bottom-right-radius: 10px;
+border-bottom-left-radius: 10px;
+    }
+}
